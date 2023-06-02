@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu</title>
+	<link rel="stylesheet" href="stylemenu.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="index.html"><img src="IMG/logo.png" class="logo"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+		    <nav class="navigation">
+		      <a href="index.html">Home</a>
+		      <a href="menu.html">Menu</a>
+		      <a href="novo.html">Novo</a>
+		      <a href="contato.html">Contato</a>
+		      <div class="animation start-home"></div>
+		    </nav>
+		</header>
+		<div class="imgBox">
+			<img src="IMG/img1.png" class="starbucks">
+		</div>
+		<header class="texmenu">
+		<div class="menux">
+			<h2>Nosso Cardápio:</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+		</div>
+		</header>
+		<header class="cardap">
+		<div class="card2">
+			<div class="imgBx2">
+				<img src="IMG/img1.png" alt="">
+			</div>
+			<div class="contentBx2">
+				<h3>Sorvete Da Casa</h3>
+				<h2 class="price2">R$ 20.<small>99</small></h2>
+				<a href="#" class="buy2">Compre Agora</a>			
+			</div>
+		</div>
+		<div class="card2">
+			<div class="imgBx2">
+				<img src="IMG/img1.png" alt="">
+			</div>
+			<div class="contentBx2">
+				<h3>Sorvete Da Casa</h3>
+				<h2 class="price2">R$ 20.<small>99</small></h2>
+				<a href="#" class="buy2">Compre Agora</a>			
+			</div>
+		</div>
+		<div class="card2">
+			<div class="imgBx2">
+				<img src="IMG/img1.png" alt="">
+			</div>
+			<div class="contentBx2">
+				<h3>Sorvete Da Casa</h3>
+				<h2 class="price2">R$ 20.<small>99</small></h2>
+				<a href="#" class="buy2">Compre Agora</a>			
+			</div>
+		</div>
+		<div class="card2">
+			<div class="imgBx2">
+				<img src="IMG/img1.png" alt="">
+			</div>
+			<div class="contentBx2">
+				<h3>Sorvete Da Casa</h3>
+				<h2 class="price2">R$ 20.<small>99</small></h2>
+				<a href="#" class="buy2">Compre Agora</a>			
+			</div>
+		</div>
+		</header>
+		<header class="cardap2">
+		<div class="card2">
+			<div class="imgBx2">
+				<img src="IMG/img1.png" alt="">
+			</div>
+			<div class="contentBx2">
+				<h3>Sorvete Da Casa</h3>
+				<h2 class="price2">R$ 20.<small>99</small></h2>
+				<a href="#" class="buy2">Compre Agora</a>			
+			</div>
+		</div>
+		<div class="card2">
+			<div class="imgBx2">
+				<img src="IMG/img1.png" alt="">
+			</div>
+			<div class="contentBx2">
+				<h3>Sorvete Da Casa</h3>
+				<h2 class="price2">R$ 20.<small>99</small></h2>
+				<a href="#" class="buy2">Compre Agora</a>			
+			</div>
+		</div>
+		<div class="card2">
+			<div class="imgBx2">
+				<img src="IMG/img1.png" alt="">
+			</div>
+			<div class="contentBx2">
+				<h3>Sorvete Da Casa</h3>
+				<h2 class="price2">R$ 20.<small>99</small></h2>
+				<a href="#" class="buy2">Compre Agora</a>			
+			</div>
+		</div>
+		<div class="card2">
+			<div class="imgBx2">
+				<img src="IMG/img1.png" alt="">
+			</div>
+			<div class="contentBx2">
+				<h3>Sorvete Da Casa</h3>
+				<h2 class="price2">R$ 20.<small>99</small></h2>
+				<a href="#" class="buy2">Compre Agora</a>			
+			</div>
+		</div>
+		</header>
+		<ul class="sci">
+			<li> <a href="https://pt-br.facebook.com" target="_blank"><img src="IMG/facebook.png"></a> </li>
+			<li> <a href="https://twitter.com" target="_blank"><img src="IMG/twitter.png"></a> </li>
+			<li> <a href="https://www.instagram.com" target="_blank"><img src="IMG/instagram.png"></a> </li>
+		</ul>
+	</section>
+
+	<script type="text/javascript">
+		function changeanimationColor(color){
+			const animation = document.querySelector('.animation');
+			animation.style.background = color;
+		}
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector(".navigation");
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>

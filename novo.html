@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Novo</title>
+	<link rel="stylesheet" href="stylenovo.css">
+</head>
+<body>
+
+	<section>
+		<div class="line"></div>
+		<header>
+			<a href="index.html"><img src="IMG/logo.png" class="logo"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+		    <nav class="navigation">
+		      <a href="index.html">Home</a>
+		      <a href="menu.html">Menu</a>
+		      <a href="novo.html">Novo</a>
+		      <a href="contato.html">Contato</a>
+		      <div class="animation start-home"></div>
+		    </nav>
+		</header>
+		<header class="container">
+		
+		<div class="slider-wrapper">
+			<h2>O Mais Novo!</h2><br>
+			<div class="slider">
+				<img id="slider-1" src="IMG/imgslid1.png">
+				<img id="slider-2" src="IMG/imgslid2.png">
+				<img id="slider-3" src="IMG/imgslid3.png">
+				<img id="slider-4" src="IMG/imgslid4.png">
+				<img id="slider-5" src="IMG/imgslid5.png">
+				<img id="slider-6" src="IMG/imgslid6.png">
+			</div>
+			<div class="slider-nav">
+				<a href="#slider-1"></a>
+				<a href="#slider-2"></a>
+				<a href="#slider-3"></a>
+				<a href="#slider-4"></a>
+				<a href="#slider-5"></a>
+				<a href="#slider-6"></a>
+			</div>
+		</div>
+		</header>
+		
+		<img src="IMG/img1.png" class="imgnovo1">
+		<img src="IMG/ofe.png" class="ofert">
+		<img src="IMG/img2.png" class="imgnovo2">
+
+		<ul class="sci">
+			<li> <a href="https://pt-br.facebook.com" target="_blank"><img src="IMG/facebook.png"></a> </li>
+			<li> <a href="https://twitter.com" target="_blank"><img src="IMG/twitter.png"></a> </li>
+			<li> <a href="https://www.instagram.com" target="_blank"><img src="IMG/instagram.png"></a> </li>
+		</ul>
+	</section>
+
+
+	<script type="text/javascript">
+		function changeanimationColor(color){
+			const animation = document.querySelector('.animation');
+			animation.style.background = color;
+		}
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector(".navigation");
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
+		}
+	</script>
+	<script type="text/javascript">
+		// Função para avançar para a próxima imagem
+		function nextSlide() {
+		  const slider = document.querySelector('.slider');
+		  const firstSlide = slider.firstElementChild;
+		  slider.scrollBy(firstSlide.offsetWidth, 0);
+		}
+
+		// Função para iniciar a troca automática de slides
+		function startSlider() {
+		  setInterval(nextSlide, 3000); // Troca de slide a cada 5 segundos (5000ms)
+		}
+
+		// Iniciar a troca automática de slides quando o documento estiver carregado
+		document.addEventListener('DOMContentLoaded', startSlider);
+
+	</script>
+</body>
+</html>

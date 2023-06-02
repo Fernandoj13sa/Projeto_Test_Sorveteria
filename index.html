@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Soveteria da vovó</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="index.html"><img src="IMG/logo.png" class="logo"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+		    <nav class="navigation">
+		      <a href="index.html">Home</a>
+		      <a href="menu.html">Menu</a>
+		      <a href="novo.html">Novo</a>
+		      <a href="contato.html">Contato</a>
+		      <div class="animation start-home"></div>
+		    </nav>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>Melhores Sorvetes na <br><span class="tit"> Sorveteria da Vó </span></h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<a href="menu.html" class="butt">Quero Mais</a>
+			</div>
+			<div class="imgBox">
+				<img src="IMG/img1.png" class="starbucks">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="IMG/thumb1.png" onclick="imgSlider('IMG/img1.png');changeCircleColor('#d14d57');changetitColor('#d14d57');changebuttColor('#d14d57');changeSciColor('#d14d57');changeanimationColor('#d14d57')"></li>
+			<li><img src="IMG/thumb2.png" onclick="imgSlider('IMG/img2.png');changeCircleColor('#7b002f');changetitColor('#7b002f');changebuttColor('#7b002f');changeSciColor('#7b002f');changeanimationColor('#7b002f')"></li>
+			<li><img src="IMG/thumb3.png" onclick="imgSlider('IMG/img3.png');changeCircleColor('#461b0d');changetitColor('#461b0d');changebuttColor('#461b0d');changeSciColor('#461b0d');changeanimationColor('#461b0d')"></li>
+		</ul>
+		<ul class="sci">
+			<li> <a href="https://pt-br.facebook.com" target="_blank"><img src="IMG/facebook.png"></a> </li>
+			<li> <a href="https://twitter.com" target="_blank"><img src="IMG/twitter.png"></a> </li>
+			<li> <a href="https://www.instagram.com" target="_blank"><img src="IMG/instagram.png"></a> </li>
+		</ul>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.starbucks').src = anything;
+		}
+		function changetitColor(color){
+			const tit = document.querySelector('.tit');
+			tit.style.color = color;
+		}
+		function changebuttColor(color){
+			const butt = document.querySelector('.butt');
+			butt.style.background = color;
+		}
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+		function changeSciColor(color){
+			const sci = document.querySelector('.sci');
+			sci.style.background = color;
+		}
+		function changeanimationColor(color){
+			const animation = document.querySelector('.animation');
+			animation.style.background = color;
+		}
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector(".navigation");
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
